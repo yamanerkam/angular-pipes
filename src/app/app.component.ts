@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { CustomPipePipe } from './custom-pipe.pipe';
 
 @Component({
   selector: 'app-root',
@@ -6,6 +7,12 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
+
+
+  constructor(private customPipe:CustomPipePipe){
+    console.log(customPipe.transform("qweerertytuyui",5,8))
+  }
+
   title = 'pipes-ang';
   money:number = 50;
   name:string = "kam";

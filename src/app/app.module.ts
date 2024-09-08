@@ -14,7 +14,7 @@ import { CustomPipePipe } from './custom-pipe.pipe';
     BrowserModule,
     AppRoutingModule
   ],
-  providers: [],
+  providers: [CustomPipePipe],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
