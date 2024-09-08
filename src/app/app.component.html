@@ -11,4 +11,12 @@
 <p>{{money|percent}}</p>
 <p>{{titleOfTheBook|titlecase}}</p>
 
-<button (click)="loveYouPlus1()">love you</button>
+<button disabled (click)="loveYouPlus1()">love you</button>
+
+<div *ngFor="let person of people | keyvalue">
+      {{ person.key }}: {{ person.value }}
+  <hr>
+</div>
+
+<hr>
+custom pipe => {{titleOfTheBook | customPipe:5:9}}
